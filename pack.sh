@@ -4,6 +4,7 @@ export COPYFILE_DISABLE=true
 tar -c \
     --exclude='._*' \
     --exclude='.svn' \
+    --exclude='.git' \
     --exclude='.DS_Store' \
     --exclude='*.bak' \
     --exclude='vendor' \
