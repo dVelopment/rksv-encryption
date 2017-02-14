@@ -3,6 +3,8 @@
 This tool is meant be used in systems that implement the Austrian 
 "Registrierkassensicherheitsverordnung" (yes, that's one word ...).
 
+This package has been developed on request by [Pocketbill](https://www.pocketbill.at/).
+
 ## API
 
 ### `createAesKey`
@@ -32,3 +34,7 @@ It takes in the following parameters:
     - `Signer::TYPE_START` a start document which is created when you start using a (new) cash register
     - `Signer::TYPE_ZERO` a "zero document" which is created every month/year or when the signature service became 
     available again, after having been unavailable for at least 1 other document.
+
+## Usage examples
+
+See `test/RKSV/Test/SignerTest.php`.
