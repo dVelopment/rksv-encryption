@@ -1,0 +1,23 @@
+{
+    "name": "pocketbill/rksv",
+    "description": "RKSV signing",
+    "type": "library",
+    "require": {
+        "TrafficCophp/ByteBuffer": "^0.3.0"
+    },
+    "authors": [
+        {
+            "name": "Daniel Holzmann",
+            "email": "d@velopment.at"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    },
+    "autoload": {
+        "psr-0": {
+            "RKSV": "src",
+            "RKSV\\Test": "test"
+        }
+    }
+}
