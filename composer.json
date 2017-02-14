@@ -1,6 +1,6 @@
 {
-    "name": "pocketbill/rksv",
-    "description": "RKSV signing",
+    "name": "dVelopment/rksv",
+    "description": "tool for RKSV encryption required by Austrian law for cash registers",
     "type": "library",
     "require": {
         "TrafficCophp/ByteBuffer": "^0.3.0"
@@ -19,5 +19,6 @@
             "RKSV": "src",
             "RKSV\\Test": "test"
         }
-    }
+    },
+    "version": "1.0.0"
 }
