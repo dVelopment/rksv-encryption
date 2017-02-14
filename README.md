@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/dVelopment/rksv-encryption.svg?style=svg)](https://circleci.com/gh/dVelopment/rksv-encryption)
+
 # RKSV encryption tool
 
 This tool is meant be used in systems that implement the Austrian 
