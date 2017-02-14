@@ -1,5 +1,5 @@
 {
-    "name": "dVelopment/rksv",
+    "name": "dvelopment/rksv",
     "description": "tool for RKSV encryption required by Austrian law for cash registers",
     "type": "library",
     "require": {
