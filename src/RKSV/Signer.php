@@ -7,7 +7,6 @@ use TrafficCophp\ByteBuffer\Buffer;
 class Signer
 {
     const TYPE_STANDARD = 'standard';
-    const TYPE_NORMAL = 'normal';
     const TYPE_CANCEL = 'cancel';
     const TYPE_TRAINING = 'training';
     const TYPE_START = 'start';
@@ -22,7 +21,7 @@ class Signer
      *
      * @return string
      */
-    public static function encryptTotalInEur($totalInEur, $base64AesKey, $receiptNumber, $registerId, $receiptType = self::TYPE_NORMAL)
+    public static function encryptTotalInEur($totalInEur, $base64AesKey, $receiptNumber, $registerId, $receiptType = self::TYPE_STANDARD)
     {
         // make sure there are no conversion errors
         $centString = str_replace('.', '', number_format($totalInEur, 2, '.', ''));
@@ -39,7 +38,7 @@ class Signer
      *
      * @return string
      */
-    public static function encryptTotalInCents($totalInCents, $base64AesKey, $receiptNumber, $registerId, $receiptType = self::TYPE_NORMAL)
+    public static function encryptTotalInCents($totalInCents, $base64AesKey, $receiptNumber, $registerId, $receiptType = self::TYPE_STANDARD)
     {
         switch ($receiptType) {
             case self::TYPE_CANCEL:
@@ -101,7 +100,7 @@ class Signer
      *
      * @return Buffer
      */
-    public static function getByteRepresentationOfTotal($totalInCents = 0)
+    private static function getByteRepresentationOfTotal($totalInCents = 0)
     {
         // create a byte array with length of 8
         $byteBuffer = new Buffer(8);
